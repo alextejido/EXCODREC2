@@ -1,38 +1,51 @@
 
 package factorial;
 
+import java.util.Scanner;
+
 
 public class Factorial {
 
 
     public static void main(String[] args) {
 
-
-    int j;
-    int f;
+        
+   
+ Scanner sc = new Scanner(System.in);
+        System.out.println("Introduce el numero para calcular el factorial");
+        int n1 = sc.nextInt();
+ 
+        
+ System.out.println(factorial(n1));
 
   
-   j = 8;    
    
+    }
 
-    
-   int i;
-   if (j == 0)
-f = 1;
+public static int factorial(int num){   
+   
+     int n2;
+   if (num == 0)
+    n2 = 1;
    else
    {
-f = 1;
-for (i = j; i >= 1; i--)
+    n2 = 1;
+for (int i = num; i >= 1; i--)
 {
-    f = f * i;
+    n2 = n2 * i;
 }
    }    
+ return n2;
+          }
   
+}
  
 
-System.out.println(f); 
 
-
-    }
     
-}
+    
+
+ 
+
+    
+    
